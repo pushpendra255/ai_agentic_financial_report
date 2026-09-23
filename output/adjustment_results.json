@@ -1,0 +1,574 @@
+{
+  "generated_at": "2026-09-23T15:05:44.335004+00:00",
+  "prototype": "manual_adjustments_agent",
+  "results": [
+    {
+      "audit_event_id": "d9788474d93d15099f81e8c3509e5344e1cdba3dee7e4a158d0ba8498d48dbf8",
+      "entry_id": "JE-001",
+      "decision": "ACCEPT",
+      "fingerprint": "f72abb03f10533da4e00c0e7845c86bdbd1ee058a963d3a33f8b15affa6c3277",
+      "debit_total": "850000.0",
+      "credit_total": "850000.0",
+      "difference": "0.0",
+      "checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "account_existence",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "posting_account",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "balance",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {
+            "debit_total": "850000.0",
+            "credit_total": "850000.0",
+            "difference": "0.0",
+            "tolerance": "0.01"
+          }
+        },
+        {
+          "name": "intercompany_self_reference",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        }
+      ],
+      "explanation": "JE-001 is accepted because all deterministic validation checks passed and debits equal credits at the configured tolerance.",
+      "source_ref": {
+        "entry_id": "JE-001",
+        "file": "data\\manual_adjustments.json"
+      }
+    },
+    {
+      "audit_event_id": "0ec995a2b287f6af63023a67d3baaa66bf7c5d6dda55b1a26b82406bf736535e",
+      "entry_id": "JE-002",
+      "decision": "REJECT",
+      "fingerprint": "816d68d1023ebd7d88edeb4ee5ab0f65460b6ce586aefc73ef5c55044c387754",
+      "debit_total": "28500.0",
+      "credit_total": "25000.0",
+      "difference": "3500.0",
+      "checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "account_existence",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "posting_account",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "balance",
+          "passed": false,
+          "severity": "ERROR",
+          "reason_code": "DEBIT_CREDIT_MISMATCH",
+          "details": {
+            "debit_total": "28500.0",
+            "credit_total": "25000.0",
+            "difference": "3500.0",
+            "tolerance": "0.01"
+          }
+        },
+        {
+          "name": "intercompany_self_reference",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        }
+      ],
+      "explanation": "JE-002 is rejected because debits are 28500.0 while credits are 25000.0 (difference 3500.0).",
+      "source_ref": {
+        "entry_id": "JE-002",
+        "file": "data\\manual_adjustments.json"
+      }
+    },
+    {
+      "audit_event_id": "8b95550081098955a9d0ec94a6b3377f01931f1bf42070480a814c0733c67841",
+      "entry_id": "JE-003",
+      "decision": "ACCEPT",
+      "fingerprint": "74638c980a29b865883161e5aa40803bfa7878f26bd635615237960ec2455962",
+      "debit_total": "11200.0",
+      "credit_total": "11200.0",
+      "difference": "0.0",
+      "checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "account_existence",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "posting_account",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "balance",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {
+            "debit_total": "11200.0",
+            "credit_total": "11200.0",
+            "difference": "0.0",
+            "tolerance": "0.01"
+          }
+        },
+        {
+          "name": "intercompany_self_reference",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        }
+      ],
+      "explanation": "JE-003 is accepted because all deterministic validation checks passed and debits equal credits at the configured tolerance.",
+      "source_ref": {
+        "entry_id": "JE-003",
+        "file": "data\\manual_adjustments.json"
+      }
+    },
+    {
+      "audit_event_id": "be4260c1ff7cc84eb1e94d76d61f5a4b2c4e97c0658df1104ca7115097d4d3eb",
+      "entry_id": "JE-004",
+      "decision": "ACCEPT",
+      "fingerprint": "7f0caa5501943862c354922646699a07fa37fec24e844a9b19b4cf42f7ef8fee",
+      "debit_total": "45000.0",
+      "credit_total": "45000.0",
+      "difference": "0.0",
+      "checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "account_existence",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "posting_account",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "balance",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {
+            "debit_total": "45000.0",
+            "credit_total": "45000.0",
+            "difference": "0.0",
+            "tolerance": "0.01"
+          }
+        },
+        {
+          "name": "intercompany_self_reference",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        }
+      ],
+      "explanation": "JE-004 is accepted because all deterministic validation checks passed and debits equal credits at the configured tolerance.",
+      "source_ref": {
+        "entry_id": "JE-004",
+        "file": "data\\manual_adjustments.json"
+      }
+    },
+    {
+      "audit_event_id": "6ab69abc1037e6408fdabe98e26388ec16acabac6e42e6131008311fff348dbc",
+      "entry_id": "JE-005",
+      "decision": "REJECT",
+      "fingerprint": "edca4c24fe9aa33d28bc515278452ad63a13bf5a877cfe6d6954c92f53686fcb",
+      "debit_total": "18500.0",
+      "credit_total": "18500.0",
+      "difference": "0.0",
+      "checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "account_existence",
+          "passed": false,
+          "severity": "ERROR",
+          "reason_code": "ACCOUNT_NOT_IN_COA",
+          "details": {
+            "accounts": [
+              "6315"
+            ]
+          }
+        },
+        {
+          "name": "posting_account",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "balance",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {
+            "debit_total": "18500.0",
+            "credit_total": "18500.0",
+            "difference": "0.0",
+            "tolerance": "0.01"
+          }
+        },
+        {
+          "name": "intercompany_self_reference",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        }
+      ],
+      "explanation": "JE-005 is rejected because the entry references account(s) not present in the supplied chart of accounts: 6315.",
+      "source_ref": {
+        "entry_id": "JE-005",
+        "file": "data\\manual_adjustments.json"
+      }
+    },
+    {
+      "audit_event_id": "edeca15f127a61e62d5cf9ab7abd620a236c7946a9213ab3f4353a47f1b63898",
+      "entry_id": "JE-006",
+      "decision": "ACCEPT",
+      "fingerprint": "1585512a5488ce4f56117b9860c92574670047bd6e8ffaaf84715b463c97b293",
+      "debit_total": "215000.0",
+      "credit_total": "215000.0",
+      "difference": "0.0",
+      "checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "account_existence",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "posting_account",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "balance",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {
+            "debit_total": "215000.0",
+            "credit_total": "215000.0",
+            "difference": "0.0",
+            "tolerance": "0.01"
+          }
+        },
+        {
+          "name": "intercompany_self_reference",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        }
+      ],
+      "explanation": "JE-006 is accepted because all deterministic validation checks passed and debits equal credits at the configured tolerance.",
+      "source_ref": {
+        "entry_id": "JE-006",
+        "file": "data\\manual_adjustments.json"
+      }
+    },
+    {
+      "audit_event_id": "21b349dd13cbcf62d491700fb32987e383e24e49a83adbad0b082132cc80baf4",
+      "entry_id": "JE-007",
+      "decision": "ACCEPT",
+      "fingerprint": "0c799b226a774f081c91ec77fb27ce3a8774c80d678eb1eda38ea1664df3aa24",
+      "debit_total": "38000.0",
+      "credit_total": "38000.0",
+      "difference": "0.0",
+      "checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "account_existence",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "posting_account",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "balance",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {
+            "debit_total": "38000.0",
+            "credit_total": "38000.0",
+            "difference": "0.0",
+            "tolerance": "0.01"
+          }
+        },
+        {
+          "name": "intercompany_self_reference",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        }
+      ],
+      "explanation": "JE-007 is accepted because all deterministic validation checks passed and debits equal credits at the configured tolerance.",
+      "source_ref": {
+        "entry_id": "JE-007",
+        "file": "data\\manual_adjustments.json"
+      }
+    },
+    {
+      "audit_event_id": "e48e20f135e6e592082431fd95eeeb00681b9aee894e45ab58dfa09cf516cd93",
+      "entry_id": "JE-008",
+      "decision": "QUARANTINE",
+      "fingerprint": "1e9f1727b91c68a2d93756edb31096c955ccca490bc441b88e392381f6ff1a80",
+      "debit_total": "320000.0",
+      "credit_total": "320000.0",
+      "difference": "0.0",
+      "checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "account_existence",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "posting_account",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "balance",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {
+            "debit_total": "320000.0",
+            "credit_total": "320000.0",
+            "difference": "0.0",
+            "tolerance": "0.01"
+          }
+        },
+        {
+          "name": "intercompany_self_reference",
+          "passed": false,
+          "severity": "WARNING",
+          "reason_code": "INTERCOMPANY_SELF_REFERENCE",
+          "details": {
+            "accounts": [
+              "2170"
+            ]
+          }
+        }
+      ],
+      "explanation": "JE-008 is quarantined for human review because the same intercompany account is used on both the debit and credit sides; the entry requires finance review rather than automatic posting.",
+      "source_ref": {
+        "entry_id": "JE-008",
+        "file": "data\\manual_adjustments.json"
+      }
+    },
+    {
+      "audit_event_id": "9b819ed4399e7303b08f3dc146104d3a79257681a3dfbdf6fe79557d71911059",
+      "entry_id": "JE-009",
+      "decision": "ACCEPT",
+      "fingerprint": "f0e6f84b29c8afdb08094c15e93ec52320b75ddf01b14f91d1a510b71fa42ef9",
+      "debit_total": "75000.0",
+      "credit_total": "75000.0",
+      "difference": "0.0",
+      "checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "account_existence",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "posting_account",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "balance",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {
+            "debit_total": "75000.0",
+            "credit_total": "75000.0",
+            "difference": "0.0",
+            "tolerance": "0.01"
+          }
+        },
+        {
+          "name": "intercompany_self_reference",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        }
+      ],
+      "explanation": "JE-009 is accepted because all deterministic validation checks passed and debits equal credits at the configured tolerance.",
+      "source_ref": {
+        "entry_id": "JE-009",
+        "file": "data\\manual_adjustments.json"
+      }
+    },
+    {
+      "audit_event_id": "a40414ac0fbd3e02817e4336220e8ba809bbebaf79d468b0038d119d22faad13",
+      "entry_id": "JE-010",
+      "decision": "ACCEPT",
+      "fingerprint": "4c5efd8cb62b1871bf15c6440e0302c18205de3346833281717188ef73cfaf4a",
+      "debit_total": "200000.0",
+      "credit_total": "200000.0",
+      "difference": "0.0",
+      "checks": [
+        {
+          "name": "schema",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "account_existence",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "posting_account",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        },
+        {
+          "name": "balance",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {
+            "debit_total": "200000.0",
+            "credit_total": "200000.0",
+            "difference": "0.0",
+            "tolerance": "0.01"
+          }
+        },
+        {
+          "name": "intercompany_self_reference",
+          "passed": true,
+          "severity": "INFO",
+          "reason_code": null,
+          "details": {}
+        }
+      ],
+      "explanation": "JE-010 is accepted because all deterministic validation checks passed and debits equal credits at the configured tolerance.",
+      "source_ref": {
+        "entry_id": "JE-010",
+        "file": "data\\manual_adjustments.json"
+      }
+    }
+  ]
+}

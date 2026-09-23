@@ -1,0 +1,55 @@
+{
+  "tb_raw_debit": "71072200.00",
+  "tb_raw_credit": "71077000.00",
+  "tb_raw_difference": "-4800.00",
+  "tb_accounts_not_in_coa": [
+    "9999"
+  ],
+  "duplicate_same_currency_rows": {
+    "6310/USD": 2
+  },
+  "missing_period_end_fx_currencies": [
+    "GBP"
+  ],
+  "coa_ambiguous_cf_categories": [
+    "1150",
+    "2170"
+  ],
+  "leafless_headers": [
+    "1290"
+  ],
+  "prior_only_accounts": [
+    "6905"
+  ],
+  "current_only_accounts": [
+    "4100",
+    "4110",
+    "4200",
+    "4300",
+    "5100",
+    "5110",
+    "5120",
+    "6100",
+    "6110",
+    "6120",
+    "6200",
+    "6210",
+    "6220",
+    "6300",
+    "6310",
+    "6400",
+    "6410",
+    "6500",
+    "6510",
+    "6600",
+    "6900",
+    "7100",
+    "7200",
+    "7300",
+    "7310",
+    "7400",
+    "8100",
+    "8200",
+    "9999"
+  ]
+}
